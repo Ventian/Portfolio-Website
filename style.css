@@ -1,0 +1,16 @@
+body {
+  background-color: #384963;
+}
+
+.text {
+  color: #868686;
+}
+
+.heading {
+  color: #ffffff;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+}
