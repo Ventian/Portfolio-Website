@@ -1,5 +1,5 @@
 body {
-  background-color: #384963;
+  background-color: #ffffff;
 }
 
 .text {
@@ -7,10 +7,20 @@ body {
 }
 
 .heading {
-  color: #ffffff;
+  color: #000000;
 }
 
 img {
   display: block;
   margin-left: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 24px;
+  border-bottom: 1px solid #dadce0;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
 }
