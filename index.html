@@ -139,7 +139,8 @@
               </li>
               <li>
                 Lastly, I'm currently attending Dev/Mission where I'm learning
-                HTML, CSS, C++ and IT fundamentals with a goal to break into IT.
+                HTML, CSS, C++ , Java and IT fundamentals with a goal to break
+                into IT.
               </li>
             </ul>
           </section>
@@ -152,9 +153,9 @@
         </header>
         <div
           class="d-flex justify-content-center align-items-center"
-          style="height: 200px"
+          style="height: 200px; width: 100%"
         >
-          <p>COMING SOON.....</p>
+          <p class="m-0 text-center">COMING SOON.....</p>
         </div>
       </article>
 
@@ -200,6 +201,8 @@
               width="100%"
               height="800px"
               style="border: 1px solid #ccc"
+              tabindex="-1"
+              aria-hidden="true"
             >
             </iframe>
 
@@ -253,5 +256,17 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      window.addEventListener("load", () => {
+        // Reset scroll after everything (including iframe) has loaded
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: "auto" });
+        }, 50);
+      });
+    </script>
   </body>
 </html>
